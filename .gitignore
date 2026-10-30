@@ -1,0 +1,24 @@
+# Runtime data and credentials
+.env
+.env.*
+!.env.example
+data/
+logs/
+artifacts/
+*.sqlite*
+*.db
+*.pem
+*.key
+# Dependencies and generated outputs
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+frontend/dist/
+frontend/.vite-cache/
+*.tsbuildinfo
+# Models are fetched separately from their official distribution
+*.gguf
+*.safetensors

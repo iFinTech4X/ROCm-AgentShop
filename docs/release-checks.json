@@ -1,0 +1,13 @@
+{
+  "release_date": "2026-10-30",
+  "backend_controlled_tests": {"passed": 51, "failed": 0, "warnings": 1, "warning": "Dependency deprecation in Starlette TestClient/AnyIO"},
+  "graph_structure_tests": {"passed": 12, "failed": 0},
+  "typescript": "passed",
+  "production_frontend_build": "passed",
+  "original_vendor_sha256_checks": {"files": 49, "unchanged": true},
+  "cloud_startup_shell_syntax": "passed",
+  "publication_secret_and_personal_path_scan": "passed",
+  "new_model_calls_for_publication": 0,
+  "live_model_validation": "14 previously completed release4 scenarios; historical functional evidence, not a new public-package model benchmark",
+  "graph_fixtures": "Structural-only derivation of two historical scenario traces with neutralized identifiers; no user messages or model response text"
+}

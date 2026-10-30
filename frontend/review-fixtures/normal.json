@@ -1,0 +1,815 @@
+[
+  {
+    "id": 7075,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "意图整理 · SIRA",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:02Z",
+    "payload": {
+      "invocation_id": "node-001",
+      "node_id": "node-001",
+      "from_node_id": null,
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Intent Structurer"
+    }
+  },
+  {
+    "id": 7077,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "意图整理 · SIRA",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:04Z",
+    "payload": {
+      "invocation_id": "node-001"
+    }
+  },
+  {
+    "id": 7079,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "意图整理 · SIRA",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:06Z",
+    "payload": {
+      "invocation_id": "node-001",
+      "node_id": "node-001",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7080,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "总协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:07Z",
+    "payload": {
+      "invocation_id": "node-002",
+      "node_id": "node-002",
+      "from_node_id": "node-001",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Main Supervisor"
+    }
+  },
+  {
+    "id": 7082,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "总协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:09Z",
+    "payload": {
+      "invocation_id": "node-002"
+    }
+  },
+  {
+    "id": 7083,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "总协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:10Z",
+    "payload": {
+      "invocation_id": "node-002",
+      "from": "Payment Main Supervisor",
+      "to": "Payment Action Generator"
+    }
+  },
+  {
+    "id": 7084,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "总协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:11Z",
+    "payload": {
+      "invocation_id": "node-002",
+      "node_id": "node-002",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7085,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "购物规划",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:12Z",
+    "payload": {
+      "invocation_id": "node-003",
+      "node_id": "node-003",
+      "from_node_id": "node-002",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Action Generator"
+    }
+  },
+  {
+    "id": 7089,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "购物规划",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:16Z",
+    "payload": {
+      "invocation_id": "node-003"
+    }
+  },
+  {
+    "id": 7092,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "意图整理 · SIRA",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:19Z",
+    "payload": {
+      "invocation_id": "node-004",
+      "node_id": "node-004",
+      "from_node_id": "node-003",
+      "parent_node_id": "node-003",
+      "node_kind": "module",
+      "role_key": "Intent Structurer"
+    }
+  },
+  {
+    "id": 7094,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "意图整理 · SIRA",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:21Z",
+    "payload": {
+      "invocation_id": "node-004",
+      "node_id": "node-004",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7096,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "购物规划",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:23Z",
+    "payload": {
+      "invocation_id": "node-003"
+    }
+  },
+  {
+    "id": 7102,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "购物规划",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:29Z",
+    "payload": {
+      "invocation_id": "node-003",
+      "node_id": "node-003",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7103,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "总协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:30Z",
+    "payload": {
+      "invocation_id": "node-005",
+      "node_id": "node-005",
+      "from_node_id": "node-004",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Main Supervisor"
+    }
+  },
+  {
+    "id": 7105,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "总协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:32Z",
+    "payload": {
+      "invocation_id": "node-005"
+    }
+  },
+  {
+    "id": 7106,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "总协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:33Z",
+    "payload": {
+      "invocation_id": "node-005",
+      "from": "Payment Main Supervisor",
+      "to": "Payment Evaluation Supervisor"
+    }
+  },
+  {
+    "id": 7107,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "总协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:34Z",
+    "payload": {
+      "invocation_id": "node-005",
+      "node_id": "node-005",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7108,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "评审协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:35Z",
+    "payload": {
+      "invocation_id": "node-006",
+      "node_id": "node-006",
+      "from_node_id": "node-005",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Evaluation Supervisor"
+    }
+  },
+  {
+    "id": 7110,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "评审协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:37Z",
+    "payload": {
+      "invocation_id": "node-006"
+    }
+  },
+  {
+    "id": 7111,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "评审协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:38Z",
+    "payload": {
+      "invocation_id": "node-006",
+      "from": "Payment Evaluation Supervisor",
+      "to": "Environment/Feasibility Evaluator"
+    }
+  },
+  {
+    "id": 7112,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "评审协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:39Z",
+    "payload": {
+      "invocation_id": "node-006",
+      "node_id": "node-006",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7113,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "可行性评审",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:40Z",
+    "payload": {
+      "invocation_id": "node-007",
+      "node_id": "node-007",
+      "from_node_id": "node-006",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Environment/Feasibility Evaluator"
+    }
+  },
+  {
+    "id": 7117,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "可行性评审",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:44Z",
+    "payload": {
+      "invocation_id": "node-007"
+    }
+  },
+  {
+    "id": 7119,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "可行性评审",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:46Z",
+    "payload": {
+      "invocation_id": "node-007",
+      "node_id": "node-007",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7120,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "评审协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:47Z",
+    "payload": {
+      "invocation_id": "node-008",
+      "node_id": "node-008",
+      "from_node_id": "node-007",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Evaluation Supervisor"
+    }
+  },
+  {
+    "id": 7122,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "评审协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:49Z",
+    "payload": {
+      "invocation_id": "node-008"
+    }
+  },
+  {
+    "id": 7123,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "评审协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:50Z",
+    "payload": {
+      "invocation_id": "node-008",
+      "from": "Payment Evaluation Supervisor",
+      "to": "Transaction/Outcome Evaluator"
+    }
+  },
+  {
+    "id": 7124,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "评审协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:51Z",
+    "payload": {
+      "invocation_id": "node-008",
+      "node_id": "node-008",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7125,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "交易结果评审",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:52Z",
+    "payload": {
+      "invocation_id": "node-009",
+      "node_id": "node-009",
+      "from_node_id": "node-008",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Transaction/Outcome Evaluator"
+    }
+  },
+  {
+    "id": 7127,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "交易结果评审",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:54Z",
+    "payload": {
+      "invocation_id": "node-009"
+    }
+  },
+  {
+    "id": 7129,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "交易核验 · TIAA",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:56Z",
+    "payload": {
+      "invocation_id": "node-010",
+      "node_id": "node-010",
+      "from_node_id": "node-009",
+      "parent_node_id": "node-009",
+      "node_kind": "agent",
+      "role_key": "H2"
+    }
+  },
+  {
+    "id": 7131,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "交易核验 · TIAA",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:58Z",
+    "payload": {
+      "invocation_id": "node-010"
+    }
+  },
+  {
+    "id": 7133,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "交易核验 · TIAA",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:00Z",
+    "payload": {
+      "invocation_id": "node-010",
+      "node_id": "node-010",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7134,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "交易结果评审",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:01Z",
+    "payload": {
+      "invocation_id": "node-009",
+      "node_id": "node-009",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7135,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "评审协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:02Z",
+    "payload": {
+      "invocation_id": "node-011",
+      "node_id": "node-011",
+      "from_node_id": "node-010",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Evaluation Supervisor"
+    }
+  },
+  {
+    "id": 7137,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "评审协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:04Z",
+    "payload": {
+      "invocation_id": "node-011"
+    }
+  },
+  {
+    "id": 7138,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "评审协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:05Z",
+    "payload": {
+      "invocation_id": "node-011",
+      "from": "Payment Evaluation Supervisor",
+      "to": "Request/Intent Consistency Evaluator"
+    }
+  },
+  {
+    "id": 7139,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "评审协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:06Z",
+    "payload": {
+      "invocation_id": "node-011",
+      "node_id": "node-011",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7140,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "需求一致性评审",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:07Z",
+    "payload": {
+      "invocation_id": "node-012",
+      "node_id": "node-012",
+      "from_node_id": "node-011",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Request/Intent Consistency Evaluator"
+    }
+  },
+  {
+    "id": 7142,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "需求一致性评审",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:09Z",
+    "payload": {
+      "invocation_id": "node-012"
+    }
+  },
+  {
+    "id": 7144,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "需求一致性评审",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:11Z",
+    "payload": {
+      "invocation_id": "node-012",
+      "node_id": "node-012",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7145,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "评审协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:12Z",
+    "payload": {
+      "invocation_id": "node-013",
+      "node_id": "node-013",
+      "from_node_id": "node-012",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Evaluation Supervisor"
+    }
+  },
+  {
+    "id": 7147,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "评审协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:14Z",
+    "payload": {
+      "invocation_id": "node-013"
+    }
+  },
+  {
+    "id": 7148,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "评审协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:15Z",
+    "payload": {
+      "invocation_id": "node-013",
+      "from": "Payment Evaluation Supervisor",
+      "to": "Payment Main Supervisor"
+    }
+  },
+  {
+    "id": 7149,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "评审协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:16Z",
+    "payload": {
+      "invocation_id": "node-013",
+      "node_id": "node-013",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7150,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "总协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:17Z",
+    "payload": {
+      "invocation_id": "node-014",
+      "node_id": "node-014",
+      "from_node_id": "node-013",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Main Supervisor"
+    }
+  },
+  {
+    "id": 7152,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "总协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:19Z",
+    "payload": {
+      "invocation_id": "node-014"
+    }
+  },
+  {
+    "id": 7153,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "总协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:20Z",
+    "payload": {
+      "invocation_id": "node-014",
+      "from": "Payment Main Supervisor",
+      "to": "Payment Revisor"
+    }
+  },
+  {
+    "id": 7154,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "总协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:21Z",
+    "payload": {
+      "invocation_id": "node-014",
+      "node_id": "node-014",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7155,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "方案整理",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:22Z",
+    "payload": {
+      "invocation_id": "node-015",
+      "node_id": "node-015",
+      "from_node_id": "node-014",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Revisor"
+    }
+  },
+  {
+    "id": 7157,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "方案整理",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:24Z",
+    "payload": {
+      "invocation_id": "node-015"
+    }
+  },
+  {
+    "id": 7159,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "方案整理",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:26Z",
+    "payload": {
+      "invocation_id": "node-015",
+      "node_id": "node-015",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7160,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "总协调",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:27Z",
+    "payload": {
+      "invocation_id": "node-016",
+      "node_id": "node-016",
+      "from_node_id": "node-015",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "Payment Main Supervisor"
+    }
+  },
+  {
+    "id": 7162,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "总协调",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:29Z",
+    "payload": {
+      "invocation_id": "node-016"
+    }
+  },
+  {
+    "id": 7163,
+    "run_id": "example-normal",
+    "kind": "route",
+    "role": "总协调",
+    "title": "route",
+    "created": "2026-01-01T00:00:30Z",
+    "payload": {
+      "invocation_id": "node-016",
+      "from": "Payment Main Supervisor",
+      "to": "FINISH"
+    }
+  },
+  {
+    "id": 7164,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "总协调",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:31Z",
+    "payload": {
+      "invocation_id": "node-016",
+      "node_id": "node-016",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7165,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "动态调整 · DBDA",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:32Z",
+    "payload": {
+      "invocation_id": "node-017",
+      "node_id": "node-017",
+      "from_node_id": "node-016",
+      "parent_node_id": null,
+      "node_kind": "module",
+      "role_key": "H3"
+    }
+  },
+  {
+    "id": 7167,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "动态调整 · DBDA",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:34Z",
+    "payload": {
+      "invocation_id": "node-017",
+      "node_id": "node-017",
+      "outcome": "returned"
+    }
+  },
+  {
+    "id": 7168,
+    "run_id": "example-normal",
+    "kind": "agent_start",
+    "role": "交易核验 · TIAA",
+    "title": "agent_start",
+    "created": "2026-01-01T00:00:35Z",
+    "payload": {
+      "invocation_id": "node-018",
+      "node_id": "node-018",
+      "from_node_id": "node-017",
+      "parent_node_id": null,
+      "node_kind": "agent",
+      "role_key": "H2"
+    }
+  },
+  {
+    "id": 7170,
+    "run_id": "example-normal",
+    "kind": "model_end",
+    "role": "交易核验 · TIAA",
+    "title": "model_end",
+    "created": "2026-01-01T00:00:37Z",
+    "payload": {
+      "invocation_id": "node-018"
+    }
+  },
+  {
+    "id": 7172,
+    "run_id": "example-normal",
+    "kind": "agent_end",
+    "role": "交易核验 · TIAA",
+    "title": "agent_end",
+    "created": "2026-01-01T00:00:39Z",
+    "payload": {
+      "invocation_id": "node-018",
+      "node_id": "node-018",
+      "outcome": "returned"
+    }
+  }
+]
